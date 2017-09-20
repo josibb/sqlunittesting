@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <configSections>
+    <section name="DatabaseUnitTesting" type="Data.Tools.UnitTesting.Configuration.DatabaseUnitTestingSection, Data.Tools.UnitTesting"/>
+  </configSections>
+
+  <DatabaseUnitTesting>
+    
+    <Connections>
+      <Connection name="con0" providerName="System.Data.SqlClient" connectionString="c1"/>
+      <Connection name="con1" providerName="System.Data.SqlClient" connectionString="c2">
+        <DatabaseDeployment type="Data.Tools.UnitTesting.Tests.TestDeployer, Data.Tools.UnitTesting.Tests" dropDatabaseOnExit="true" createUniqueDatabaseName="true" >
+          <DeployerConfig testProperty="testvalue"/>
+        </DatabaseDeployment>
+      </Connection>
+      <Connection name="con2" providerName="System.Data.SqlClient" connectionString="c3">
+        <DatabaseDeployment type="Data.Tools.UnitTesting.Tests.TestDeployer, Data.Tools.UnitTesting.Tests" dropDatabaseOnExit="false" createUniqueDatabaseName="false" >
+        </DatabaseDeployment>
+      </Connection>
+    </Connections>
+  </DatabaseUnitTesting>
+    
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2"/>
+  </startup>
+</configuration>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <configSections>
+    <section name="DatabaseUnitTesting" type="Data.Tools.UnitTesting.Configuration.DatabaseUnitTestingSection, Data.Tools.UnitTesting"/>
+  </configSections>
+
+  <DatabaseUnitTesting>
+    <Connections>
+      <Connection name="test3" providerName="p3" connectionString="c3"/>
+      <Connection name="test4" providerName="p4" connectionString="c4"/>
+    </Connections>
+  </DatabaseUnitTesting>
+    
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2"/>
+  </startup>
+</configuration>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<ActionResult xmlns="http://tempuri.org/ActionResult.xsd">
+  <ResultSets>
+    <ResultSet>
+      <Schema>
+        <Columns>
+          <Column name="DateTime" dbType="datetime" clrType="System.DateTime" />
+          <Column name="Value" dbType="decimal" clrType="System.Decimal" />
+        </Columns>
+      </Schema>
+      <Rows>
+        <Row>
+          <DateTime>2001-06-01T00:00:00</DateTime>
+          <Value>30.00</Value>
+        </Row>
+      </Rows>
+    </ResultSet>
+  </ResultSets>
+</ActionResult>

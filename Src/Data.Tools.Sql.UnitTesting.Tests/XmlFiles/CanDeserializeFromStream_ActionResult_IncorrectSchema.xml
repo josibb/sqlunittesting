@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ActionResult xmlns="http://tempuri.org/ActionResult.xsd">
+  <!--<ResultSets>-->
+    <ResultSet>
+      <Schema>
+        <Columns>
+          <Column name="Cola" clrType="System.Int32" dbType="int"/>
+          <Column name="Colb" clrType="System.String" dbType="nvarchar"/>
+        </Columns>
+      </Schema>
+      <Rows>
+        <Row>
+          <Cola>12</Cola>
+          <Colb>NVC001</Colb>
+        </Row>
+        <Row>
+          <Cola>15</Cola>
+          <Colb>NVC002</Colb>
+        </Row>
+      </Rows>
+    </ResultSet>
+  <!--</ResultSets>-->
+</ActionResult>

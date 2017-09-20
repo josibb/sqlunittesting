@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <configSections>
+    <section name="DatabaseUnitTesting" type="Data.Tools.UnitTesting.Configuration.DatabaseUnitTestingSection, Data.Tools.UnitTesting"/>
+  </configSections>
+
+  <DatabaseUnitTesting>
+    <DatabaseDepoyment databaseProjectFileName="..\..\projectfile.cs" buildConfiguration="Release" connection="test2" dropDatabaseOnExit="true" createUniqueDatabaseName="true" />
+    <Connections>
+      <Connection name="test1" providerName="p1" connectionString="c1"/>
+      <Connection name="test2" providerName="p2" connectionString="c2"/>
+    </Connections>
+  </DatabaseUnitTesting>
+    
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2"/>
+  </startup>
+</configuration>

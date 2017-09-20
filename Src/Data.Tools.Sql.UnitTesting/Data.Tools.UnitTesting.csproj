@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E1BA74C8-CDE9-4F00-B8E8-E777C1C25D68}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Data.Tools.UnitTesting</RootNamespace>
+    <AssemblyName>Data.Tools.UnitTesting</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Data.Tools.Schema.Sql.UnitTesting, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.Tools.UnitTest.10.0.60809.0\lib\net40\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.Tools.UnitTest.10.0.60809.0\lib\net40\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\ConfigurationFileTestConfigFactory.cs" />
+    <Compile Include="Configuration\ConnectionElement.cs" />
+    <Compile Include="Configuration\ConnectionElementCollection.cs" />
+    <Compile Include="Configuration\DatabaseDeploymentElement.cs" />
+    <Compile Include="Configuration\DatabaseUnitTestingSection.cs" />
+    <Compile Include="Configuration\DeployerConfigElementBase.cs" />
+    <Compile Include="Configuration\IDeployerConfigElementFactory.cs" />
+    <Compile Include="Configuration\IDeployerConfigFactory.cs" />
+    <Compile Include="FluentApi\LinkedInputParameterExtensions.cs" />
+    <Compile Include="FluentApi\SetupExtensions.cs" />
+    <Compile Include="FluentApi\SqlAssert.cs" />
+    <Compile Include="FluentApi\SqlParameterExtensions.cs" />
+    <Compile Include="FluentApi\SqlScriptExtensions.cs" />
+    <Compile Include="FluentApi\TestActionExtensions.cs" />
+    <Compile Include="FluentApi\TestExtensions.cs" />
+    <Compile Include="TestSetup\Configuration\DatabaseDeployment.cs" />
+    <Compile Include="TestSetup\Configuration\DeployerConfigBase.cs" />
+    <Compile Include="TestSetup\IDatabaseDeployer.cs" />
+    <Compile Include="TestSetup\Setup.cs" />
+    <Compile Include="TestSetup\TestAction.cs" />
+    <Compile Include="Result\ActionResult.cs" />
+    <Compile Include="Result\ColumnCollection.cs" />
+    <Compile Include="Equality\ColumnEqualityComparer.cs" />
+    <Compile Include="Equality\ResultSetEqualityComparer.cs" />
+    <Compile Include="Equality\ResultSetSchemaEqualityComparer.cs" />
+    <Compile Include="Equality\RowCollectionEqualityComparer.cs" />
+    <Compile Include="Equality\RowEqualityComparer.cs" />
+    <Compile Include="TestSetup\Sql\SqlScriptAction.cs" />
+    <Compile Include="TestSetup\Sql\LinkedInputParameter.cs" />
+    <Compile Include="Result\ResultSetRow.cs" />
+    <Compile Include="Result\ResultSetRowCollection.cs" />
+    <Compile Include="Serialization\ActionResultSerializer.cs" />
+    <Compile Include="Result\Column.cs" />
+    <Compile Include="TestSetup\Configuration\ConnectionContext.cs" />
+    <Compile Include="Equality\ActionResultEqualityComparer.cs" />
+    <Compile Include="Result\ResultSet.cs" />
+    <Compile Include="Result\ResultSetSchema.cs" />
+    <Compile Include="Serialization\ColumnCollectionSerializer.cs" />
+    <Compile Include="Serialization\ColumnSerializer.cs" />
+    <Compile Include="Serialization\IContextXmlSerializer.cs" />
+    <Compile Include="Serialization\IXmlSerializable.cs" />
+    <Compile Include="Serialization\IXmlSerializer.cs" />
+    <Compile Include="Serialization\ResultSetRowSerializer.cs" />
+    <Compile Include="Serialization\ResultSetSchemaSerializer.cs" />
+    <Compile Include="Serialization\ResultSetSerializer.cs" />
+    <Compile Include="Serialization\ResultSetRowCollectionSerializer.cs" />
+    <Compile Include="TestSetup\Sql\InputParameter.cs" />
+    <Compile Include="TestSetup\Sql\OutputParameter.cs" />
+    <Compile Include="TestSetup\Sql\SqlScriptParameter.cs" />
+    <Compile Include="TestSetup\Sql\StaticValueInputParameter.cs" />
+    <Compile Include="TestSetup\Test.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestSetup\Configuration\TestConfig.cs" />
+    <Compile Include="Utils\ConfigurationElementExtensions.cs" />
+    <Compile Include="Utils\ObjectExtensions.cs" />
+    <Compile Include="Utils\Resources.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <EmbeddedResource Include="Serialization\ActionResult.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReadMe.txt" />
+    <Content Include="Serialization\ActionResult.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
