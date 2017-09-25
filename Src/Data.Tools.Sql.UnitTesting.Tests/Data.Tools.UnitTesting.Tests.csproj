@@ -52,6 +52,9 @@
     <Reference Include="System.Xml.Serialization" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Solution Items\VersionInfo.cs">
+      <Link>Properties\VersionInfo.cs</Link>
+    </Compile>
     <Compile Include="Configuration\DatabaseUnitTestingSectionTests.cs" />
     <Compile Include="Configuration\ConfigurationFileTestConfigFactoryTests.cs" />
     <Compile Include="Utils\TemporaryConfigurationFile.cs" />
