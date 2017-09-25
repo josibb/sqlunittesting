@@ -54,6 +54,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Solution Items\VersionInfo.cs">
+      <Link>Properties\VersionInfo.cs</Link>
+    </Compile>
     <Compile Include="Configuration\ConfigurationFileTestConfigFactory.cs" />
     <Compile Include="Configuration\ConnectionElement.cs" />
     <Compile Include="Configuration\ConnectionElementCollection.cs" />
