@@ -57,6 +57,7 @@
     </Compile>
     <Compile Include="Configuration\DatabaseUnitTestingSectionTests.cs" />
     <Compile Include="Configuration\ConfigurationFileTestConfigFactoryTests.cs" />
+    <Compile Include="UtilsTests\UnitTest1.cs" />
     <Compile Include="Utils\TemporaryConfigurationFile.cs" />
     <Compile Include="Utils\TemporaryFile.cs" />
     <Compile Include="Configuration\TestConfigurationTests.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Serialization\ResultSetRowSerializerTests.cs" />
     <Compile Include="TestSetup\ConnectionContextTests.cs" />
     <Compile Include="TestSetup\TestTests.cs" />
+    <Compile Include="Utils\CsvDataReaderTests.cs" />
     <None Include="TestSetup\SetupTests.cs" />
     <Compile Include="Utils\ResourceHelper.cs" />
     <Compile Include="Utils\TestDataReader.cs" />
@@ -119,9 +121,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UtilsTests\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="XmlFiles\ConfigFileWith3Connections.xml">
       <SubType>Designer</SubType>

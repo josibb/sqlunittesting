@@ -12,7 +12,7 @@ namespace Data.Tools.UnitTesting.Result
     {
         public static ResultSetRowCollection CreateFromReader(IDataReader reader)
         {
-            reader.ThrowIfNull("rader");
+            reader.ThrowIfNull("reader");
 
             var rows = new ResultSetRowCollection();
 
